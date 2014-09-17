@@ -10,8 +10,12 @@
 
 <template name="content">
   <div>
-    <h4>Sign in with twitter to follow your classmates!</h4>
+    {{#if currentUser}}
+      <h4>Thanks! You've been added!</h4>
+    {{else}}
+      <h4>Sign in with twitter to follow your classmates!</h4>
         {{> loginButtons}}
+    {{/if}}
   </div>
     <ul>
       {{#each users}}
