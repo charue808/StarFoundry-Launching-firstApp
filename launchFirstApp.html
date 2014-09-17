@@ -14,11 +14,9 @@
         {{> loginButtons}}
   </div>
     <ul>
-      <li>Charles</li>
-      <li>Joe</li>
-      <li>Lee</li>
-      <li>Teri</li>
-      <li>Ben</li>
+      {{#each users}}
+        {{> user}}
+      {{/each}}
    </ul>
 </template>
 
